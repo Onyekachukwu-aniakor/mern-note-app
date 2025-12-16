@@ -15,7 +15,7 @@ const Login = () => {
     const handleSubmit =async(e) =>{
         e.preventDefault();
         try {
-           const response = await axios.post('https://mern-note-app-api-kwo6.onrender.com', {email,password}); 
+           const response = await axios.post('https://mern-note-app-sqi8.onrender.com', {email,password}); 
            if(response.data.success){
             login(response.data.user)
             toast.success('Loggedin successfully')
