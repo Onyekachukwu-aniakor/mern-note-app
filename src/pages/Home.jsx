@@ -119,7 +119,7 @@ const Home = () => {
          note={note}
          onEdit={onEdit}
          deleteNote={deleteNote}/>
-       )) : <p>No notes please login/signup to add notes</p>}
+       )) : <p>No notes: <br /> Please login/signup to add notes</p>}
        </div>
 
       <button className='bg-teal-500 text-2xl text-white font-bold rounded-full p-4 fixed right-4 bottom-4' onClick={()=>setModalOpen(true)}> 
