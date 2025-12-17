@@ -10,12 +10,12 @@ const Navbar = ({setQuery}) => {
         <div className='text-xl font-bold mr-2'>
             <Link to='/'>NoteApp</Link>
         </div>
-        <input type="text" placeholder='Search notes...' className='bg-gray-600 py-2 px-4 rounded-lg mr-3 ' onChange={(e)=>setQuery(e.target.value)} /><div>
+        <input type="text" placeholder='Search notes...' className='bg-gray-600 py-2 px-4 rounded-lg mr-3 w-full md:w-2/3 ' onChange={(e)=>setQuery(e.target.value)} /><div>
             
             {!user ? (
                 <>
-                <Link to='/login' className='bg-blue-500 py-2 px-4 rounded mr-3'>Login</Link>
-            <Link to='/register' className='bg-green-500 py-2 px-4 rounded mr-3'>Signup</Link>
+                <Link to='/login' className='bg-blue-500 py-2 px-4 rounded ml-4 md:ml-3 sm:ml-2'>Login</Link>
+            <Link to='/register' className='bg-green-500 py-2 px-4 rounded ml-4 md:ml-3 sm:ml-2'>Signup</Link>
                 </>
             )
             : <>
