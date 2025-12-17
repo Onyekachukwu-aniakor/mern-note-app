@@ -6,7 +6,7 @@ const Navbar = ({setQuery}) => {
     const {user,logout}= useAuth()
     
   return (
-    <nav className='bg-gray-900 p-4 text-white flex justify-between items-center md:max-w-screen-md sm:max-w-screen-sm' >
+    <nav className='bg-gray-900 p-4 text-white flex justify-between items-center md:min-w-screen-md sm:min-w-screen-sm' >
         <div className='text-xl font-bold'>
             <Link to='/'>NoteApp</Link>
         </div>
