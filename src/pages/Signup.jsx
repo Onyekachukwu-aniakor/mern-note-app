@@ -15,7 +15,7 @@ const Signup = () => {
     const handleSubmit =async(e) =>{
         e.preventDefault();
         try {
-           const response = await axios.post('https://mern-note-app-sqi8.onrender.com', {name,email,password}) 
+           const response = await axios.post('https://mern-note-app-api-kwo6.onrender.com/api/auth/register', {name,email,password}) 
            if(response.data.success){
             toast.success('Signed Up Successfully')
             navigate('/login')
