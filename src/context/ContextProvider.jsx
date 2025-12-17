@@ -19,7 +19,7 @@ const ContextProvider = ({children}) => {
     useEffect(()=>{
       const verifyUser = async () => {
         try {
-          const res = await axios.get('https://mern-note-app-api-kwo6.onrender.com/api/auth/verify', {
+          const res = await axios.get('https://mern-note-app-sqi8.onrender.com/api/auth/verify', {
             headers :{Authorization:`Bearer ${localStorage.getItem('token')}`
             }
           })

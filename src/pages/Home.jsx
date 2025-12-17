@@ -27,7 +27,7 @@ const Home = () => {
 
   const fetchNotes= async () => {
       try {
-        const {data}= await axios.get('https://mern-note-app-api-kwo6.onrender.com/api/note',
+        const {data}= await axios.get('https://mern-note-app-sqi8.onrender.com/api/note',
            {
             headers :{Authorization:`Bearer ${localStorage.getItem('token')}`
             }
