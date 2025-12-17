@@ -10,7 +10,7 @@ const Navbar = ({setQuery}) => {
         <div className='text-xl font-bold mr-2'>
             <Link to='/'>NoteApp</Link>
         </div>
-        <input type="text" placeholder='Search notes...' className='bg-gray-600 py-2 px-4 rounded-lg mr-3 w-full' onChange={(e)=>setQuery(e.target.value)} /><div>
+        <input type="text" placeholder='Search notes...' className='bg-gray-600 py-2 px-4 rounded-lg mr-3 ' onChange={(e)=>setQuery(e.target.value)} /><div>
             
             {!user ? (
                 <>
