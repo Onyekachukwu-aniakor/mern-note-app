@@ -8,7 +8,7 @@ import { ToastContainer } from "react-toastify"
 function App() {
 
   return (
-    <div >
+    <div className="bg-gradient-to-br from-blue-200 to-purple-400" >
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
