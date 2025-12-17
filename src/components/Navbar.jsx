@@ -6,11 +6,11 @@ const Navbar = ({setQuery}) => {
     const {user,logout}= useAuth()
     
   return (
-    <nav className='bg-gray-900 p-4 text-white flex justify-between items-center  rounded md:grid-cols-3 md:items-center md:grid sm:grid  md:justify-end '  >
+    <nav className='bg-gray-900 p-4 text-white flex justify-between items-center  rounded md:grid-cols-3  md:grid sm:grid  md:justify-end '  >
         <div className='text-xl font-bold'>
             <Link to='/'>NoteApp</Link>
         </div>
-        <input type="text" placeholder='Search notes...' className='bg-gray-600 py-2 px-4 rounded-lg mr-2 ' onChange={(e)=>setQuery(e.target.value)} /><div>
+        <input type="text" placeholder='Search notes...' className='bg-gray-600 py-2 px-4 rounded-lg mr-2 w-full' onChange={(e)=>setQuery(e.target.value)} /><div>
             
             {!user ? (
                 <>
