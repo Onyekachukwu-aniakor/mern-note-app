@@ -110,7 +110,8 @@ const Home = () => {
     
   }
   return (
-    <div className='bg-gray-100  min-h-screen '>
+    <div className='bg-gray-100  min-h-screen  bg-gradient-to-br
+    from-cyan-500 via-blue-500 to-sky-500 object-cover '>
       <Navbar  setQuery={setQuery}/>
 
       <div className='grid grid-cols-1 md:grid-cols-3 px-8 pt-4 gap-3'>
